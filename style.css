@@ -1,0 +1,225 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+nav {
+  background-color: rgb(185, 141, 75) !important;
+  padding: 20px !important;
+  color: rgb(185, 141, 75) !important;
+}
+
+nav ul {
+  display: flex;
+  justify-content: center !important;
+  flex-wrap: wrap;
+}
+
+nav ul li {
+  list-style: none;
+  justify-content: center !important;
+}
+
+nav ul li a {
+  text-decoration: none;
+  color: black;
+  margin: 10px;
+  justify-content: center !important;
+}
+
+nav img {
+  height: 100px;
+  width: 120px;
+}
+
+h2 {
+  font-family: "Libre Baskerville", serif !important;
+  color: rgb(155, 117, 67) !important;
+}
+
+/* image card */
+.card1 {
+  position: absolute;
+  left: 50%;
+  border-radius: 15px;
+  height: 300px;
+  width: 200px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.25);
+  overflow: hidden;
+  transform: translateX(-50%);
+}
+
+.bio {
+  opacity: 0;
+  position: absolute;
+  bottom: 0;
+  padding: 10px;
+  color: white;
+  width: 100%;
+  border-radius: 0 0 15px 15px;
+}
+
+.img-card1 {
+  width: 100%;
+  height: 100%;
+  border-radius: 15px;
+  object-fit: cover;
+  cursor: pointer;
+  transition: 0.5s all ease-in-out;
+}
+
+.img-card1:hover {
+  transform: scale(1.5);
+  transition: 0.5s all ease-in-out;
+  filter: grayscale(1%);
+}
+
+.img-card1:hover ~ .bio {
+  opacity: 1;
+  transition: 0.5s all ease-in-out;
+}
+
+h3 {
+  color: rgb(177, 136, 85) !important;
+  font-family: sans-serif;
+}
+
+h4 {
+  color: rgb(177, 136, 85) !important;
+  text-align: center !important;
+  font-family: monospace !important;
+}
+
+body {
+  background-color: rgb(245, 225, 206) !important;
+}
+
+/* media query */
+@media screen and (max-width: 600px) {
+  nav {
+    padding: 10px !important;
+  }
+
+  nav ul {
+    flex-direction: column;
+  }
+
+  nav ul li a {
+    margin: 5px;
+  }
+
+  nav img {
+    height: 80px;
+    width: 100px;
+  }
+
+  .card1 {
+    position: relative;
+    width: 90%;
+    left: 0;
+    margin: 10px auto;
+  }
+
+  .img-card1 {
+    height: auto;
+  }
+
+  h2 {
+    font-size: 1.5rem;
+    text-align: center;
+  }
+
+  h3 {
+    font-size: 1.2rem;
+    text-align: center;
+  }
+
+  h4 {
+    font-size: 1rem;
+  }
+}
+
+@media screen and (max-width: 400px) {
+  nav {
+    padding: 5px !important;
+  }
+
+  nav ul {
+    flex-direction: column;
+  }
+
+  nav ul li a {
+    margin: 5px;
+    font-size: 0.9rem;
+  }
+
+  nav img {
+    height: 60px;
+    width: 80px;
+  }
+
+  .card1 {
+    width: 100%;
+    left: 0;
+    margin: 10px auto;
+  }
+
+  h2 {
+    font-size: 1.2rem;
+  }
+
+  h3 {
+    font-size: 1rem;
+  }
+
+  h4 {
+    font-size: 0.9rem;
+  }
+}
+
+/* General styles */
+body {
+  font-family: "Roboto", sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+/* Navbar styles */
+.navbar img {
+  height: 40px;
+}
+
+.navbar-nav {
+  flex-direction: row;
+}
+
+.nav-item {
+  padding: 0 10px;
+}
+
+.nav-link {
+  color: #000;
+  font-weight: bold;
+}
+
+/* Carousel styles */
+.carousel-inner img {
+  object-fit: cover;
+  height: 400px;
+}
+
+/* Card styles */
+.card {
+  margin-bottom: 20px;
+}
+
+.card img {
+  height: 200px;
+  object-fit: cover;
+}
+
+/* Footer styles */
+.page-footer {
+  background-color: #f8f9fa;
+  padding: 10px 0;
+}
